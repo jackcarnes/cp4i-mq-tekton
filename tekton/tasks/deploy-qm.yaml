@@ -48,7 +48,6 @@ spec:
           export SVRCONN_SNI=$(echo "${QM_NAME}" | tr '[:upper:]' '[:lower:]')2e-conn.chl.mq.ibm.com
           export SVRCONN_NAME=$(echo "${QM_NAME}" | tr '[:lower:]' '[:upper:]').CONN # in upper case
           export ROUTE_NAME="${QM_POD_NAME}-conn-traffic"
-
           # Stub environment variables in qm_template
           envsubst < qm_template.yaml > qm_out.yaml
           # Apply the QueueManager crd
