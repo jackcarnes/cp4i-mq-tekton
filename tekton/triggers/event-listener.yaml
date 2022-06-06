@@ -5,9 +5,11 @@ metadata:
 spec:
   serviceAccountName: pipeline
   triggers:
-    - name: cicd-trigger
+    - bindings:
+        - kind: TriggerBinding
+          ref: mq-trigger-binding
       template:
-        name: mq-trigger-template
+        ref: mq-trigger-template
       # interceptors:
       #  - cel:
       #       filter: "header.match('X-GitHub-Event', 'push') && (body.ref == 'refs/heads/master' || body.ref == 'refs/heads/2020.2')"
