@@ -21,7 +21,7 @@ spec:
   version: 9.3.0.0-r1
   license:
     accept: true
-    license: L-RJON-BXUPZ2
+    license: L-RJON-CD3JKX
     use: NonProduction
   pki:
     keys:
