@@ -1,9 +1,9 @@
 #! /bin/bash
 
-PIPELINE_NS=cp4i-mq
+PIPELINE_NS=melch1
 PIPELINE_SA=pipeline
 
-MQ_NS=cp4i-mq
+MQ_NS=melch1
 PN_NS=cp4i
 
 GIT_SECRET_NAME=user-at-github
